@@ -2,6 +2,12 @@
 
 A simple Minecraft Discord bot. This was my first Java plugin project ever! (So pls dont hate on the code 😭)
 
+## Screenshots
+
+![Minebot Screenshot 1](https://cdn.discordapp.com/attachments/1439225656029216788/1439371804731900126/minebot2.png)
+![Minebot Screenshot 2](https://cdn.discordapp.com/attachments/1439225656029216788/1439371805113450566/minebot1.png)
+
+
 ## Key Features & Benefits
 
 *   Connect your Minecraft server to Discord.
