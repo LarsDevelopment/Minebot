@@ -1,0 +1,5 @@
+discord:
+  token: "TOKEN_HERE"
+  channel: "YOUR_DISCORD_CHANNEL_ID_HERE"
+  guildId: "GUILD_ID_HERE"
+  adminRole: "ADMIN_ROLE_ID_HERE"

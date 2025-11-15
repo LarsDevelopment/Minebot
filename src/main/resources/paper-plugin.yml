@@ -1,0 +1,4 @@
+name: MineBot
+version: '${project.version}'
+main: me.larsdevelopment.minebot.MineBot
+api-version: '1.21'
