@@ -4,8 +4,8 @@ A simple Minecraft Discord bot. This was my first Java plugin project ever! (So 
 
 ## Screenshots
 
-![Minebot Screenshot 1](https://cdn.discordapp.com/attachments/1439225656029216788/1439371804731900126/minebot2.png)
-![Minebot Screenshot 2](https://cdn.discordapp.com/attachments/1439225656029216788/1439371805113450566/minebot1.png)
+![Minebot Screenshot 1](https://raw.githubusercontent.com/LarsDevelopment/Minebot/refs/heads/main/minebot1.png)
+![Minebot Screenshot 2](https://raw.githubusercontent.com/LarsDevelopment/Minebot/refs/heads/main/minebot2.png)
 
 
 ## Key Features & Benefits
