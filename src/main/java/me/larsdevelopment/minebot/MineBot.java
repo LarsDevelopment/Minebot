@@ -2,10 +2,8 @@ package me.larsdevelopment.minebot;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.event.player.PlayerAdvancementDoneEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.player.*;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -109,5 +107,34 @@ public class MineBot extends JavaPlugin implements Listener {
                 "**" + advancementTitle + "**\n" + advancementDescription,
                 color
         );
+    }
+    @EventHandler
+    public void onDeath(PlayerDeathEvent event){
+        discord.sendEmbed(event.getPlayer().getName() + " Died!", event.getDeathMessage(), Color.RED);
+    }
+    @EventHandler
+    public void onDimensionsChanged(PlayerChangedWorldEvent event){
+
+        String world =  event.getPlayer().getWorld().getName();
+        Color embed_color = Color.ORANGE;
+
+        switch(world){
+            case "world":
+                world = "Overworld";
+                embed_color = Color.green;
+                break;
+            case "world_nether":
+                world = "Nether";
+                embed_color = Color.red;
+                break;
+            case "world_the_end":
+                world = "The End";
+                embed_color = Color.magenta;
+                break;
+            default:
+                world = world.toUpperCase();
+                break;
+        }
+        discord.sendEmbed(event.getPlayer().getName() + " got into the " + world + "!", event.getPlayer().getName() + " got to the " + world, embed_color);
     }
 }
